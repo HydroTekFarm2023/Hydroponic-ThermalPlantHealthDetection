@@ -57,9 +57,9 @@ def detect_color():
     blue_percentage = round((blue_pixels / total_pixels) * 100, 2)
 
  # Plot the pie chart
-    labels = ['Red', 'Orange', 'Yellow', 'Blue']
-    sizes = [red_percentage, orange_percentage, yellow_percentage, blue_percentage]
-    colors = ['red', 'orange', 'yellow', 'blue']
+    labels = ['Red', 'Orange', 'Yellow', 'Blue', 'Green']
+    sizes = [red_percentage, orange_percentage, yellow_percentage, blue_percentage, green_percentage]
+    colors = ['red', 'orange', 'yellow', 'blue', 'green']
     plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%')
     plt.axis('equal')
     plt.show()
