@@ -1,0 +1,60 @@
+// /* app.component.scss */
+
+.center {
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  display: block; /* To remove extra whitespace below the image */
+  margin: 0 auto; /* To center the image horizontally */
+  max-width: 100%; /* To ensure the image does not exceed its original size */
+  }
+
+.alert {
+  background-color: #ffcccc;
+  color: #cc0000;
+  padding: 10px;
+  border: 5px solid #cc0000;
+  transform: translateY(-150px);
+  margin-top: 10px;
+}
+
+
+/* Style the link */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s; /* Add smooth transition for color change */
+}
+
+/* Change link color on hover */
+a:hover {
+  color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Style the paragraph container */
+p {
+  margin: 10px 0; /* Add some spacing around the paragraph */
+}
+
+/* Style the paragraph text */
+p a {
+  font-weight: bold; /* Make the link text bold */
+}
+
+/* Add an icon before the link text */
+p a::before {
+  content: '\1F517'; /* Unicode character for a link icon, adjust as needed */
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+/* Style for healthy status */
+.healthy-status {
+  background-color: #ccffcc; /* Light green background */
+  color: #009900; /* Dark green text color */
+  padding: 10px;
+  border: 5px solid #009900;
+  transform: translateY(-150px);
+  margin-top: 10px;
+}

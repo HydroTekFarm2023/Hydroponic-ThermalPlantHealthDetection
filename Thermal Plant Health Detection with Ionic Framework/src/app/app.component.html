@@ -1,0 +1,46 @@
+<ion-app>
+  <header class="center">
+    <h1>Welcome to HydroTek Farm LLC.</h1><br>
+    <div class="image-container">
+      <img src="assets/hydroteklogo.png" alt="My Image">
+    </div>
+  </header>
+  <main>
+    <div *ngIf="apiData">
+      <!-- <h2>Data from API:</h2>
+      <ul>
+        <li>Blue Percentage: {{ apiData['Blue Percentage'] }}%</li>
+        <li>Green Percentage: {{ apiData['Green Percentage'] }}%</li>
+        <li>Orange Percentage: {{ apiData['Orange Percentage'] }}%</li>
+        <li>Red Percentage: {{ apiData['Red Percentage'] }}%</li>
+        <li>Yellow Percentage: {{ apiData['Yellow Percentage'] }}%</li>
+      </ul>
+  
+       // Display alert message if Red Percentage is greater than 20  -->
+  
+      <!-- <div *ngIf="apiData['Red Percentage'] > 20" class="alert">
+        <p>Status : Plant Unhealthy!</p>
+        <p>
+          <a href="https://example.com/plant-treatment" target="_blank" rel="noopener noreferrer">Click here for Plant Treatment Information</a>
+        </p>
+      </div> -->
+
+      <div *ngIf="apiData['Red Percentage'] > 30; else healthyStatus" class="alert">
+        <p>Status: Plant Unhealthy!</p>
+        <p>
+          <a href="https://www.proflowers.com/blog/plant-diseases" target="_blank" rel="noopener noreferrer">Click here for Plant Treatment Information</a>
+        </p>
+      </div>
+      
+      <ng-template #healthyStatus>
+        <div class="healthy-status">
+          <p>Status: Plant Healthy!</p>
+        </div>
+      </ng-template>
+
+    </div>
+  </main>
+  
+  
+</ion-app>
+
